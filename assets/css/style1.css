@@ -1,0 +1,93 @@
+.skill-container1 {
+    width: 400px; 
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid hwb(57 87% 6%);
+  }
+  
+  .skill1 {
+    margin-bottom: 20px;
+  }
+  
+  .skill-name1 {
+    font-family:  sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .skill-bar1 {
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+  }
+  
+  .skill-bar1:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: #4CAF50; /* Progress bar color */
+    transition: width 0.5s ease;
+  }
+  
+  .skill-level1 {
+    float: right;
+    font-size: 12px;
+  }
+  
+
+  /* new one */
+  .card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+    margin-top: 50px; 
+  }
+
+  
+  .card {
+    position: relative;
+    width: 300px; 
+    height: 200px; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ 
+  
+  .card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    color: #333;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+ 
+
+  .card:hover {
+    transform: translateY(-5px); 
+  }
+  
+  .card:hover .card-content {
+    opacity: 1; 
+  }
+  
